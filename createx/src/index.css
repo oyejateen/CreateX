@@ -1,0 +1,78 @@
+/* index.css */
+
+/* Basic reset for consistent appearance across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Flexbox centering to make sure the content aligns vertically */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 4rem;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+button {
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+/* Simple utility classes for spacing */
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Add some padding at the top and bottom of the page */
+section {
+  padding: 40px 0;
+}
