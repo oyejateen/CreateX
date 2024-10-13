@@ -6,3 +6,4 @@ export { default as Home } from './Home/index.jsx';
 export { default as Contact } from './Contact/index.jsx';
 export { default as SubmissionPortal } from './SubmissionPortal/index.jsx';
 export { default as Sponsors } from './Sponsors/index.jsx';
+export { default as Navbar } from './Navbar/index.jsx';
