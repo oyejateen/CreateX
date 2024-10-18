@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary-color: #FF6E1F;
+  --cream-color: #F5E6C4;
+  --white-color: #F5E6C4;
+  --black-color: #000000;
+  --light-gray: #E8E8E8;
+}
+
 @font-face {
   font-family: 'Kagitingan';
   src: url('/fonts/Kagitingan.woff2') format('woff2'),
@@ -18,7 +26,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 
 .font-jura {
   font-family: 'Jura', sans-serif;
