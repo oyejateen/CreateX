@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Kagitingan';
-    src: url('./fonts/Kagitingan.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 .sponsor-card {
     width: 85.33333rem;
@@ -22,9 +16,8 @@
 
 .sponsor-title {
     color: #E8E8E8;
-    text-align: center;
     font-family: 'Kagitingan', sans-serif;
-    font-size: 5.6rem;
+    font-size: 4.33rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -32,16 +25,22 @@
 
 .sponsor-title.hover-title {
     color: black;
+    text-align: left;
+    margin-left: 4.2rem;
+    margin-top: 3rem;
 }
 
 .sponsor-company {
     color: #000;
     text-align: center;
     font-family: 'Kagitingan', sans-serif;
-    font-size: 4.93333rem;
+    font-size: 4.33rem;
+    text-align: left;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-left: 4.2rem;
+    margin-top: 3rem;
 }
 
 .sponsor-description {
@@ -52,14 +51,35 @@
     font-weight: 400;
     line-height: normal;
     width: 51.53333rem;
+    text-align: justify;
+    padding-left: 4.2rem;
 }
 
 .sponsor-hover {
     display: flex;
-    justify-content: space-between;
     position: absolute;
     inset: 0;
     padding: 1rem;
+    flex-direction: row; /* Keep it as row */
+}
+
+.sponsor-image {
+    margin-top: 5rem; /* Adjust the margin as needed */
+}
+
+.sponsor-hover .flex-1 {
+    display: flex;
+    flex-direction: column; /* Keep flex-direction column for both columns */
+    justify-content: flex-start; /* Align items to the top */
+}
+
+.sponsor-title {
+    margin-top: 1rem; /* Space above the title */
+}
+
+.sponsor-title.hover-title {
+    color: black;
+    margin-top: 1rem; /* Add some margin from the description */
 }
 
 @media (max-width: 768px) {
