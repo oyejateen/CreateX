@@ -1,4 +1,26 @@
 /* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Kagitingan';
+  src: url('/fonts/Kagitingan.otf') format('truetype'); /* Adjust path as necessary */
+}
+
+@font-face {
+  font-family: 'Jura';
+  src: url('/fonts/Jura.ttf') format('truetype'); /* Adjust path as necessary */
+}
+
+.font-jura {
+  font-family: 'Jura', sans-serif;
+}
+
+.font-kagitingan {
+  font-family: 'Kagitingan', sans-serif;
+}
+
 
 /* Basic reset for consistent appearance across browsers */
 * {
