@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import PropTypes from "prop-types";
 
 const SponsorCard = ({
   title,
@@ -204,6 +205,23 @@ const SponsorCard = ({
       </div>
     </div>
   );
+};
+
+SponsorCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  companyName: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  socials: PropTypes.shape({
+    mail: PropTypes.string,
+    instagram: PropTypes.string,
+    github: PropTypes.string,
+    linkedin: PropTypes.string,
+  }),
+};
+
+SponsorCard.defaultProps = {
+  socials: {},
 };
 
 export default SponsorCard;
