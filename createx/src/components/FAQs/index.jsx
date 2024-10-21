@@ -18,16 +18,16 @@ const FAQs = () => {
     <div className=" pt-40 h-full overflow-hidden w-screen  flex justify-center bg-black">
         
       <div className="w-[1100px]  ">
-        <div  className="text-white flex pl-16 md:text-7xl text-4xl font-bold"><h1>FAQS</h1></div>
+        <div  className="text-white flex pl-16 font-kagitingan md:text-7xl text-4xl font-bold"><h1>FAQS</h1></div>
         {faqs.map((item, i) => (
           <div key={i} className={`text-white border-black  font-medium  last:border-b-0 rounded-[40px] m-16   ${
             activeId === i ? " bg-white "  : ""
           }`}>
             <div
-              className={` cursor-pointer  bg-orange-500  md:py-5 px-8 py-3 flex  justify-between rounded-full md:text-4xl text-2xl items-center `}
+              className={` cursor-pointer  bg-[#FF6E1F]  md:py-5 px-8 py-3 flex  justify-between rounded-full md:text-4xl text-2xl items-center `}
               onClick ={() => togglerFunction(i)}
             >
-              <p className="flex md:text-4xl text-2xl font-jura justify-start">{item.title}</p>
+              <p className="flex md:text-4xl font-jura text-2xl justify-start">{item.title}</p>
               <span>
                 {activeId === i ? (
                   <i className="fa-solid items-centre fa-angle-up"></i>
