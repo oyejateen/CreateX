@@ -2,12 +2,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home, ProblemStatements, RegistrationForm, Rules, Contact, Sponsors, SubmissionPortal, Schedule } from "./components";
 import Navbar from "./components/Navbar";
 import "./App.css";
+import FAQs from "./components/FAQs";
 
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        <Navbar />
+        <Navbar /> 
+        
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
