@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Kagitingan';
-    src: url('./assets/fonts/Kagitingan-Bold.otf') format('otf');
-    font-weight: 700;
+    src: url('assets/fonts/Kagitingan-Bold.otf') format('opentype');
+    font-weight: 500;
     font-style: normal;
 }
 @tailwind base;

@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, ProblemStatements, RegistrationForm, Rules, Contact, Sponsors, SubmissionPortal, Schedule } from "./components";
+import { Home, ProblemStatements, RegistrationForm, Rules, Contact, Sponsors, SubmissionPortal, Schedule, FAQs } from "./components";
 import Navbar from "./components/Navbar";
 import "./App.css";
 
@@ -20,6 +20,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/sponsors" element={<Sponsors />} />
+            <Route path="/faq" element={<FAQs/>}/>
           </Routes>
         </main>
       </div>

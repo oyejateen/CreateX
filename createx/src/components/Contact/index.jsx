@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="bg-black md:pl-60 min-h-screen flex flex-col items-center  relative">
+    <div className="bg-black md:pl-60 min-h-screen flex flex-col items-center md:p-0 p-12 relative">
       <h1 className="text-[#E8E8E8] font-kagitingan text-5xl self-start md:ml-18 mb-16 mt-24">CONTACT US</h1>
       
       <div className="relative  w-full max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center ">
