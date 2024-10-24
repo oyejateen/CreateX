@@ -37,7 +37,7 @@ const FAQs = () => {
               </span>
             </div>
             { activeId === i && (
-              <div className={`px-5 py-4 text-lg transition-all ease-in-out duration-500 overflow-hidden  flex items-center text-black justify-center ${activeId === i ? " opacity-100" : "max-h-0 opacity-0" }`}>
+              <div className={`px-5 py-4 text-lg transform transition-transform duration-300 ease-in-out  overflow-hidden  flex items-center text-black justify-center `}>
                 <p>{item.description}</p>
               </div>
             ) }

@@ -4,12 +4,12 @@ import Button from '../Button/index';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  
   const menuRef = useRef(null);
 
-  useEffect(() => {
+useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
+      setIsScrolled(window.scroll > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -38,8 +38,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black bg-opacity-50 backdrop-blur-md' : 'bg-transparent'}`}>
-      <div className="container mx-auto px-6 py-2 flex justify-between items-center">
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 `}>
+      {onscroll = ()=>{setIsMenuOpen(false)} }
+      <div className="container mx-auto px-6 py-2 flex justify-between backdrop-blur-md items-center">
         <button onClick={toggleMenu} className={`${isMenuOpen ? 'invisible' : 'visible'}`}>
           <img src="/assets/menu-icon.svg" alt="Menu" className="w-[5.75rem] h-[3.875rem]" />
         </button>
