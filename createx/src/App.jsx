@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, ProblemStatements, RegistrationForm, Rules, Contact, Sponsors, SubmissionPortal, Schedule } from "./components";
+import { Home, ProblemStatements, RegistrationForm, Rules, Contact, Sponsors, SubmissionPortal, Schedule, FAQs } from "./components";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import FAQs from "./components/FAQs";
+
 
 function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar /> 
-        
+
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -20,6 +20,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/sponsors" element={<Sponsors />} />
+            <Route path="/faq" element={<FAQs/>}/>
           </Routes>
         </main>
       </div>

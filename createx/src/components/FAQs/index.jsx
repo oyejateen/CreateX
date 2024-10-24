@@ -15,19 +15,19 @@ const FAQs = () => {
   };
 
   return ( <>
-    <div className=" pt-40 h-full overflow-hidden w-screen  flex justify-center bg-black">
+    <div className=" py-40 h-[800px]  overflow-hidden w-screen  flex justify-center bg-black">
         
       <div className="w-[1100px]  ">
-        <div  className="text-white flex pl-16 md:text-7xl text-4xl font-bold"><h1>FAQS</h1></div>
+        <div  className="text-white flex pl-16 font-kagitingan md:text-7xl text-4xl font-bold"><h1>FAQS</h1></div>
         {faqs.map((item, i) => (
-          <div key={i} className={`text-white border-black  font-medium  last:border-b-0 rounded-[40px] m-16   ${
+          <div key={i} className={`text-white border-black  font-medium  last:border-b-0 rounded-[40px] md:m-16 m-14  ${
             activeId === i ? " bg-white "  : ""
           }`}>
             <div
-              className={` cursor-pointer  bg-orange-500  md:py-5 px-8 py-3 flex  justify-between rounded-full md:text-4xl text-2xl items-center `}
+              className={` cursor-pointer  bg-[#FF6E1F]  md:py-5 px-8 py-3 flex  justify-between rounded-full md:text-4xl text-2xl items-center `}
               onClick ={() => togglerFunction(i)}
             >
-              <p className="flex md:text-4xl text-2xl font-jura justify-start">{item.title}</p>
+              <p className="flex md:text-4xl font-jura text-2xl justify-start">{item.title}</p>
               <span>
                 {activeId === i ? (
                   <i className="fa-solid items-centre fa-angle-up"></i>
@@ -37,7 +37,7 @@ const FAQs = () => {
               </span>
             </div>
             { activeId === i && (
-              <div className={`px-5 py-4 text-lg transition-[max-height] ease-in-out overflow-hidden  flex items-center text-black justify-center ${activeId === i ? " opacity-100" : "max-h-0 opacity-0" }`}>
+              <div className={`px-5 py-4 text-lg transition-all ease-in-out duration-500 overflow-hidden  flex items-center text-black justify-center ${activeId === i ? " opacity-100" : "max-h-0 opacity-0" }`}>
                 <p>{item.description}</p>
               </div>
             ) }
