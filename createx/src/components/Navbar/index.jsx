@@ -7,27 +7,8 @@ const Navbar = () => {
   
   const menuRef = useRef(null);
 
-useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scroll > 0);
-    };
+ 
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -38,7 +19,7 @@ useEffect(() => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 `}>
+    <nav className={`fixed top-0 left-0 w-full  z-50 transition-all duration-300 `}>
       {onscroll = ()=>{setIsMenuOpen(false)} }
       <div className="container mx-auto px-6 py-2 flex justify-between backdrop-blur-md items-center">
         <button onClick={toggleMenu} className={`${isMenuOpen ? 'invisible' : 'visible'}`}>
@@ -52,7 +33,7 @@ useEffect(() => {
         <Button to="/login">LOGIN</Button>
       </div>
 
-      <div ref={menuRef} className={`fixed top-0 left-0 w-80 h-full bg-[#1E1E1E] transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div ref={menuRef} className={`fixed top-0 left-0 w-80 h-full overflow-y-auto bg-[#1E1E1E] transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-8 flex flex-col space-y-6">
           <div className="flex justify-between items-center mb-6">
             <Button to="/register" className="flex-grow mr-4" onClick={closeMenu}>REGISTER NOW</Button>
@@ -71,7 +52,7 @@ useEffect(() => {
           <Link to="/submission" className="text-white font-kagitingan text-2xl text-left" onClick={closeMenu}>SUBMISSION PORTAL</Link>
           <Link to="/registration" className="text-white font-kagitingan text-2xl text-left" onClick={closeMenu}>TEAM REGISTRATION</Link>
         </div>
-        <div className="absolute bottom-8 left-0 w-full flex justify-center">
+        <div className=" bottom-8 left-0 w-full flex justify-center">
           <img src="/assets/logo.svg" alt="CreateX Logo" className="h-12" />
         </div>
       </div>
