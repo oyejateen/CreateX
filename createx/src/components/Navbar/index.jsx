@@ -4,10 +4,10 @@ import Button from '../Button/index';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
+  
   const menuRef = useRef(null);
 
-  useEffect(() => {
+useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scroll > 0);
     };
