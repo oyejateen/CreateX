@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: { fontFamily: {
+      'kagitingan': ['Kagitingan', 'sans-serif'],
+      'Jura': ['Jura', 'serif'],
+      'Koulen': ['Koulen', 'sans-serif'],
+    },
+    },
   },
   plugins: [],
 }

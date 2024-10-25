@@ -1,3 +1,33 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Kagitingan';
+    src: local('Kagitingan'), 
+         url('./fonts/Kagitingan/Kagitingan-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'Jura';
+    src: local('Jura'), 
+         url('./fonts/Jura/Jura-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Koulen';
+    src: local('Koulen'), 
+         url('./fonts/Koulen/Koulen-Regular.ttf') format('truetype');
+    font-style: normal;
+  }
+
+* {
+
+     line-height: normal;
+}
