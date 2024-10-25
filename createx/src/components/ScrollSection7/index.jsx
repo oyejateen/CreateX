@@ -6,7 +6,7 @@ import { BsLink45Deg } from "react-icons/bs";
 const ScrollSection7 = ({ background, logo, headingOrange, description, websiteUrl }) => {
   return (
     <div className='about_tech-bizz scroll-section'>
-      <img className='background' src={background} alt="" />
+      <img className='about_tech-bizz__background' src={background} alt="" />
       <div className='about_tech-bizz__container'>
         <div className='about_tech-bizz__content'>
           <span className='about_tech-bizz__content__heading'>
@@ -20,7 +20,7 @@ const ScrollSection7 = ({ background, logo, headingOrange, description, websiteU
 
           <div className='about_tech-bizz__content__description--hashtag-container'>
             <p className='about_tech-bizz__content__description--bypass '> <a href={websiteUrl}> <IconContext.Provider value={{ color: "orange", className: "global-class-name" }}></IconContext.Provider> <span><BsLink45Deg />
-            </span>{websiteUrl} </a></p>
+            </span> <h3>{websiteUrl} </h3></a></p>
           </div>
         </div>
         <img className='about_tech-bizz__logo' src={logo} alt="" />

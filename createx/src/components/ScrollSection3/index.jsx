@@ -4,7 +4,7 @@ import './ScrollSection3.scss';
 const ScrollSection3 = ({ background, headingOrange, description }) => {
   return (
     <div className='about_rules scroll-section'>
-      <img className='background' src={background} alt="" />
+      <img className='about_rules__background' src={background} alt="" />
       <div className='about_rules__container'>
         <div className='about_rules__content'>
           <span className='about_rules__content__heading'>

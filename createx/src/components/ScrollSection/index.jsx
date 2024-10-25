@@ -4,7 +4,7 @@ import './ScrollSection.scss';
 const ScrollSection = ({ background, logo, headingWhite, headingOrange, highlightText, description }) => {
   return (
     <div className='about_createx scroll-section'>
-      <img className='background' src={background} alt="" />
+      <img className='about_createx__background' src={background} alt="" />
       <div className='about_createx__container'>
         <div className='about_createx__content'>
           <span className='about_createx__content__heading'>

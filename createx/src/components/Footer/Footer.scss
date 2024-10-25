@@ -8,6 +8,14 @@
     justify-content: flex-start;
     line-height: normal;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+        height: 6.67rem;
+        padding: 0 0.5rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
 &__container{
     display: flex;
     justify-content: center;
@@ -36,15 +44,26 @@
         font-family: "Jura";
         line-height: normal;
 
+        @media screen and (max-width: 768px) {
+            font-size: 1.19rem;
+            text-align: center;
+            
+        }
+
         &--highlight{
             color: white;
             font-weight: 400;
             font-family: 'Jura';
             font-size: 2.13rem;
             line-height: normal;
+
+            @media screen and (max-width: 768px) {
+                font-size: 0.8rem;
+                text-align: center;
         }
 
     }
+}
 }
 }
 }

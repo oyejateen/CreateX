@@ -1,7 +1,13 @@
 @mixin heading {
-  font-size: 4.26rem;
-  font-family: 'Kagitingan';
-  font-weight: 700;
+    font-size: 4.26rem;
+    font-family: 'Kagitingan';
+    font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.13rem;
+      
+    }
+
 }
 
 @mixin white {
@@ -21,7 +27,7 @@
   justify-content: center;
   align-items: flex-start;
 
-  .background {
+  .about_rules__background {
     position: absolute;
     top: 0;
     left: 0;
@@ -29,6 +35,11 @@
     height: 100%;
     object-fit: cover;
     z-index: 0;
+    
+    @media screen and (max-width: 768px) {
+      object-position: center;
+      object-fit: fill;
+    }
   }
 
 }
@@ -46,9 +57,6 @@
   &__logo {
     position: relative;
     z-index: 1;
-    // Customize sizes as necessary
-    // max-width: 40.6rem;
-    // max-height: 12.93rem;
   }
 
   &__content {
@@ -57,6 +65,7 @@
     justify-content: center;
     position: relative;
     z-index: 1;
+    max-width: 17.6rem;
 
     &__heading {
       display: inline-flex;
@@ -82,6 +91,12 @@
       font-weight: 400;
       @include white;
       text-wrap: wrap;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.06rem;
+        max-width: 17.6rem;
+        
+      }
 
       &--highlight {
         font-weight: 700;
