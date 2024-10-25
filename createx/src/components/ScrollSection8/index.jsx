@@ -8,7 +8,7 @@ import { Assets } from '../../assets';
 const ScrollSection8 = () => {
   return (
     <div className='about_contact scroll-section'>
-      <img className='background' src={Assets.CreateX_BG4} alt="" />
+      <img className='about_contact__background' src={Assets.CreateX_BG4} alt="" />
       <div className='about_contact__container'>
         <div className='about_contact__content'>
           <span className='about_contact__content__heading'>

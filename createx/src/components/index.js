@@ -7,4 +7,5 @@ export { default as ScrollSection6 } from './ScrollSection6';
 export { default as ScrollSection7 } from './ScrollSection7';
 export { default as ScrollSection8 } from './ScrollSection8';
 export { default as CountdownTimer } from './CountdownTimer';
-// export { default as  ScrollSectionWrapper } from './ScrollSectionWrapper';
+export { default as Navbar } from './Navbar';
+export { default as CreateXVideo } from './CreateXVideo';

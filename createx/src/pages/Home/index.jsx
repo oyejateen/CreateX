@@ -1,16 +1,14 @@
 import React from 'react';
 import { Assets } from '../../assets';
-import { HashtagCreateToInnovate, ScrollSection, ScrollSection2, ScrollSection3, ScrollSection5, ScrollSection6, ScrollSection7, ScrollSection8 } from '../../components';
+import { HashtagCreateToInnovate, ScrollSection, ScrollSection2, ScrollSection3, ScrollSection5, ScrollSection6, ScrollSection7, ScrollSection8, CreateXVideo } from '../../components';
 import Footer from '../../components/Footer';
+
 
 const Home = () => {
   return (
     <div className='scroll-container'>
       <div className='scroll-section'>
-        <video autoPlay loop muted className='video'>
-          <source src={Assets.CreateXMp4} type="video/mp4" />
-          Oops! The CreateX 2024 logo video couldn&apos;t be loaded. Stay tuned for exciting updates!
-        </video>
+        <CreateXVideo />
       </div>
 
       <ScrollSection

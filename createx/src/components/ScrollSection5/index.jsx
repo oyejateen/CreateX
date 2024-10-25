@@ -5,7 +5,7 @@ import { Assets } from '../../assets';
 const ScrollSection5 = () => {
   return (
     <div className='about_prize scroll-section'>
-      <img className='background' src={Assets.CreateX_BG2} alt="" />
+      <img className='about_prize__background' src={Assets.CreateX_BG2} alt="" />
       <div className='about_prize__container'>
         
         <div className='about_prize__content'>

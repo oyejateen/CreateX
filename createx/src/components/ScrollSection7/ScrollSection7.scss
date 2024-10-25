@@ -2,6 +2,12 @@
     font-size: 4.26rem;
     font-family: 'Kagitingan';
     font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.13rem;
+      
+    }
+
 }
 
 @mixin white {
@@ -21,7 +27,7 @@
     justify-content: center;
     align-items: flex-start;
   
-    .background {
+    .about_tech-bizz__background {
       position: absolute;
       top: 0;
       left: 0;
@@ -29,6 +35,11 @@
       height: 100%;
       object-fit: cover;
       z-index: 0;
+
+      @media screen and (max-width: 768px) {
+        object-position: center;
+        object-fit: fill;
+      }
     }
 
 }
@@ -41,14 +52,22 @@
       justify-content: center;
       align-items: center;
       gap: 3.53rem;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 4rem;
+        
+      }
     }
   
     &__logo {
       position: relative;
       z-index: 1;
-      // Customize sizes as necessary
-      // max-width: 40.6rem;
-      // max-height: 12.93rem;
+      @media screen and (max-width: 768px) {
+        width: 50%;
+        
+      }
     }
   
     &__content {
@@ -58,6 +77,11 @@
       position: relative;
       z-index: 1;
       margin-left: 10rem;
+
+      @media screen and (max-width: 768px) {
+        margin-left: 0;
+        
+      }
   
       &__heading {
         display: inline-flex;
@@ -72,6 +96,10 @@
         &--orange {
           @include orange;
           @include heading;
+          @media screen and (max-width: 768px) {
+            font-size: 1.6rem;
+
+          }
         }
       }
   
@@ -84,6 +112,12 @@
         @include white;
         text-wrap: wrap;
 
+        @media  screen and (max-width: 768px) {
+          font-size: 1.06rem;
+          max-width: 17.6rem;
+          
+        }
+
         &--bypass {
           font-size: 1.93rem;
           color: #D7CABE;
@@ -92,9 +126,19 @@
           max-width: 54.93rem;
           display: inline-flex;
           justify-content: center;
+
+          @media screen and (max-width: 768px) {
+            font-size: 0.93rem;
+            
+            max-width: 16rem;
+          }
           
-          & a{
+          & a {
             text-decoration:underline;
+            text-wrap: wrap;
+            display: inline-flex;
+
+            
           }
 
           & svg {

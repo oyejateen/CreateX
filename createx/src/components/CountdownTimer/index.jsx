@@ -55,13 +55,13 @@ const CountdownTimer = ({ targetDate }) => {
           <p className='timer-heading'>Minutes</p>
           </div>
         </div>
-        <h1 className='colon'>:</h1>
+        {/* <h1 className='colon'>:</h1>
         <div className="time-block">
         <div className='time-container'>
           <span className='time-number'>{addLeadingZero(timeLeft.seconds)}</span>
           <p className='timer-heading'>Seconds</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
