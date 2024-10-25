@@ -65,7 +65,11 @@
     justify-content: center;
     position: relative;
     z-index: 1;
-    max-width: 17.6rem;
+    @media screen and (max-width: 768px) {
+      max-width: 17.6rem;
+      
+    }
+    
 
     &__heading {
       display: inline-flex;
