@@ -1,0 +1,14 @@
+@mixin orange {
+    color: #FF6E1F;
+
+}
+
+@mixin white {
+    color: #ffffff;
+}
+
+@mixin heading {
+    font-size: 4.26rem;
+    font-family: 'Kagitingan';
+    font-weight: 700;
+}

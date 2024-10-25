@@ -4,17 +4,11 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {
-      colors: {
-      primary: '#FF6E1F',
-      cream: '#F5E6C4',
-      white: '#F5E6C4',
-      black: '#000000',
+    extend: { fontFamily: {
+      'kagitingan': ['Kagitingan', 'sans-serif'],
+      'Jura': ['Jura', 'serif'],
+      'Koulen': ['Koulen', 'sans-serif'],
     },
-      fontFamily: {
-        'kagitingan': ['Kagitingan', 'sans-serif'],
-        'jura': ['Jura', 'sans-serif'],
-      },
     },
   },
   plugins: [],
