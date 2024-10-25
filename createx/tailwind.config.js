@@ -1,11 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
+      colors: {
+      primary: '#FF6E1F',
+      cream: '#F5E6C4',
+      white: '#F5E6C4',
+      black: '#000000',
+    },
       fontFamily: {
         'kagitingan': ['Kagitingan', 'sans-serif'],
         'jura': ['Jura', 'sans-serif'],
@@ -14,3 +19,4 @@ export default {
   },
   plugins: [],
 }
+
