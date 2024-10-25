@@ -39,7 +39,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black bg-opacity-50 backdrop-blur-md' : 'bg-transparent'}`}>
-      <div className="container mx-auto px-6 py-2 flex justify-between items-center">
+      <div className=" mx-auto px-4 py-2 flex justify-between items-center">
         <button onClick={toggleMenu} className={`${isMenuOpen ? 'invisible' : 'visible'}`}>
           <img src="/assets/menu-icon.svg" alt="Menu" className="w-[5.75rem] h-[3.875rem]" />
         </button>
@@ -47,8 +47,6 @@ const Navbar = () => {
         <Link to="/" className="mx-auto">
           <img src="/assets/logo.svg" alt="CreateX Logo" className="h-14" />
         </Link>
-
-        <Button to="/login">LOGIN</Button>
       </div>
 
       <div ref={menuRef} className={`fixed top-0 left-0 w-80 h-full bg-[#1E1E1E] transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>

@@ -15,18 +15,24 @@ const Contact = () => {
           <div className="md:pl-8">
             <p className="mb-8 text-xl text-left font-jura">We're here and ready to connect, whichever way works best for you. Let's create something amazing together!</p>
             <div className="space-y-8 md:ml-8">
-              <div className="flex items-center gap-4">
-                <img src="/assets/mail.png" alt="Email" className="w-8 h-8" />
-                <span className="text-lg font-jura">example@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <img src="/assets/phone.png" alt="Phone" className="w-8 h-8" />
-                <span className="text-lg font-jura">4755XXXXXX</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <img src="/assets/insta.png" alt="Instagram" className="w-8 h-8" />
-                <span className="text-lg font-jura">@INSTAGRAM</span>
-              </div>
+      <div className="flex items-center gap-4">
+        <img src="/assets/mail.png" alt="Email" className="w-8 h-8" />
+        <a href="mailto:info_createx@mlvti.ac.in" className="text-lg font-jura">
+          info_createx@mlvti.ac.in
+        </a>
+      </div>
+      <div className="flex items-center gap-4">
+        <img src="/assets/phone.png" alt="Phone" className="w-8 h-8" />
+        <a href="tel:+917568379160" className="text-lg font-jura">
+          +91 75683 79160
+        </a>
+      </div>
+      <div className="flex items-center gap-4">
+        <img src="/assets/insta.png" alt="Instagram" className="w-8 h-8" />
+        <a href="https://instagram.com/techbizzclub" target="_blank" rel="noopener noreferrer" className="text-lg font-jura">
+          techbizzclub
+        </a>
+      </div>
             </div>
           </div>
           <img src="/assets/contact-svg.png" alt="Contact Illustration" className="absolute bottom-0 right-0 w-2/3 h-auto" />
