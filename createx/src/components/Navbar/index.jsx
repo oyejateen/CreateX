@@ -39,15 +39,16 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black bg-opacity-50 backdrop-blur-md' : 'bg-transparent'}`}>
-      <div className=" mx-auto px-4 py-2 flex justify-between items-center">
-        <button onClick={toggleMenu} className={`${isMenuOpen ? 'invisible' : 'visible'}`}>
-          <img src="/assets/menu-icon.svg" alt="Menu" className="w-[5.75rem] h-[3.875rem]" />
-        </button>
+      <div className="mx-auto px-4 py-2 flex justify-between items-center bg-[rgba(0,0,0,0.70)] backdrop-blur-[10px]">
+  <button onClick={toggleMenu} className={`${isMenuOpen ? 'invisible' : 'visible'}`}>
+    <img src="/assets/menu-icon.svg" alt="Menu" className="w-[5.75rem] h-[3.875rem]" />
+  </button>
 
-        <Link to="/" className="mx-auto">
-          <img src="/assets/logo.svg" alt="CreateX Logo" className="h-14" />
-        </Link>
-      </div>
+  <Link to="/" className="mx-auto">
+    <img src="/assets/logo.svg" alt="CreateX Logo" className="h-14" />
+  </Link>
+</div>
+
 
       <div ref={menuRef} className={`fixed top-0 left-0 w-80 h-full bg-[#1E1E1E] transform transition-transform duration-300 ease-in-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="p-8 flex flex-col space-y-6">
