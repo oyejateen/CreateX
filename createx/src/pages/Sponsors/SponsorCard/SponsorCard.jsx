@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaGlobe, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 import PropTypes from "prop-types";
+import "./SponsorCard.scss";
 
 const SponsorCard = ({
   title,
@@ -28,19 +29,22 @@ const SponsorCard = ({
   return (
     <div
       className={`w-[20rem] sm:w-[30rem] md:w-[50rem] lg:w-[60rem] xl:w-[70rem] 2xl:w-[80rem] ${
-        isMobile ? "h-auto " : "h-[33.33rem]"
+        isMobile ? "h-auto sponsor-card " : "h-[33.33rem]"
       } rounded-[3.33rem] border-[5px] transition-all duration-300 relative ${
         isHovered || isMobile
           ? "bg-[var(--primary-color)] border-[var(--primary-color)]"
           : "bg-[var(--black-color)] border-[var(--primary-color)]"
-      }`}
+      }`
+    }
+    // style={{ width: "100%", height: "20rem" }}
       onMouseEnter={() => !isMobile && setIsHovered(true)}
       onMouseLeave={() => !isMobile && setIsHovered(false)}
     >
       <div className="flex flex-col items-center justify-center h-full">
         {/* Mobile */}
         {isMobile ? (
-  <div className="flex flex-col p-4 space-y-4">
+  <div className="flex flex-col p-4 space-y-4"
+  style={{ backgroundColor: "#FF6E1F", borderRadius: "3rem"}}>
     <h3 className="text-[var(--black-color)] font-kagitingan text-[2rem] text-left pt-4 pb-2">
       {title}
     </h3>
@@ -48,8 +52,8 @@ const SponsorCard = ({
       <img
         src={imageUrl}
         alt="Image"
-        className="w-[10rem] h-[10rem] object-cover rounded-full"
-        style={{ background: "#D9D9D9" }}
+        className=" w-[10rem] h-[10rem] object-cover rounded-full"
+        style={{ background: "#FFFFFF", padding: "2rem" }}
       />
     </div>
     <h4 className="text-[var(--black-color)] font-kagitingan text-[2rem] font-bold text-left">
@@ -87,7 +91,7 @@ const SponsorCard = ({
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub size={30} className="text-[var(--black-color)]" />
+          <FaGlobe size={30} className="text-[var(--black-color)]" />
         </a>
       )}
       {socials.linkedin && (
@@ -110,9 +114,11 @@ const SponsorCard = ({
               className={`absolute inset-0 flex ${
                 isHovered ? "p-4" : "justify-center"
               } items-center`}
+              style={  isHovered?({ backgroundColor: "#FF6E1F", borderRadius: "3rem"}): ({ backgroundColor: "transparent"})}
             >
               {isHovered ? (
-                <div className="flex pr-4 flex-col w-[60%] h-full">
+                <div className="flex pr-4 flex-col w-[60%] h-full"
+                >
                   <h4 className="text-[var(--black-color)] font-kagitingan text-[2rem] md:text-[3rem] lg:text-[4rem] xl:text-[4.33rem] font-bold text-left ml-[1rem] md:ml-[2rem] lg:ml-[3rem] mt-[2rem]">
                     {companyName}
                   </h4>
@@ -130,8 +136,8 @@ const SponsorCard = ({
                   <img
                     src={imageUrl}
                     alt={title}
-                    className="w-[10rem] md:w-[15rem] lg:w-[20rem] h-[10rem] md:h-[15rem] lg:h-[20rem] object-cover rounded-full"
-                    style={{ background: "#D9D9D9" }}
+                    className=" ss w-[10rem] md:w-[15rem] lg:w-[20rem] h-[10rem] md:h-[15rem] lg:h-[20rem] object-cover rounded-full"
+                    style={{ background: "#E8E8E8" }}
                   />
                   <h3 className="text-[var(--light-gray)] font-kagitingan text-[2rem] md:text-[3rem] lg:text-[4rem] xl:text-[4.33rem] font-bold pt-[2rem]">
                     {title}
@@ -144,8 +150,8 @@ const SponsorCard = ({
                   <img
                     src={imageUrl}
                     alt={title}
-                    className="w-[10rem] md:w-[15rem] lg:w-[20rem] h-[10rem] md:h-[15rem] lg:h-[20rem] object-cover rounded-full mb-4 mt-[2rem]"
-                    style={{ background: "#D9D9D9" }}
+                    className=" ss w-[10rem] md:w-[15rem] lg:w-[20rem] h-[10rem] md:h-[15rem] lg:h-[20rem] object-cover rounded-full mb-4 mt-[2rem]"
+                    style={{ background: "#FFFFFF"}}
                   />
                   <div className="mt-4 flex space-x-3">
                     {socials.mail && (
@@ -178,7 +184,7 @@ const SponsorCard = ({
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <FaGithub
+                        <FaGlobe
                           size={30}
                           className="text-[var(--black-color)]"
                         />

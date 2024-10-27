@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Assets } from '../../assets';
 
 /**
  * @typedef {Object} SocialLinks
@@ -14,31 +15,32 @@ import PropTypes from 'prop-types';
  * @property {string} description - Brief description of the sponsor
  * @property {string} companyName - Name of the sponsor's company
  * @property {SocialLinks} socials - Object containing social media links
+ * @property {string} imageUrl - URL of the sponsor's logo
  */
 
 /** @type {Sponsor[]} */
 
 export const SponsorsData = [
     {
-      title: "Title Name 1",
-      description: "Description for the first sponsor.",
-      companyName: "Company Name 1",
+      title: "Title Sponsor",
+      description: "Innovative Technologies for Business Services (ITBS) Solution is a leading consultancy and business transformation company with five years of experience. We offer tailored solutions for resilient and responsive enterprises. Our multiple regional branches and numerous projects showcase our dedication to helping clients enhance performance, reduce costs, and adopt innovative strategies.",
+      companyName: "InnovatechS",
+      imageUrl: Assets.InnovatechS,
       socials: {
-        mail: "https://mail.com/company1",
-        github: "https://github.com/company1",
-        linkedin: "https://linkedin.com/company1",
-        instagram: "https://instagram.com/company1",
+        github: "https://itbssolution.com/",
+        linkedin: "https://www.linkedin.com/company/innovatechs/",
       },
     },
     {
-      title: "Title Name 2",
-      description: "Description for the second sponsor.",
-      companyName: "Company Name 2",
+      title: "Affiliate Partner",
+      description: "Hashtrust follows the latest technology with innovative solutions to convert your imagination into a software reality. We're at the forefront of technology, consistently embracing the latest advancements. Our commitment to innovation allows us to turn your imaginative concepts into real-world software solutions with ease and precision.",
+      companyName: "HashTrust Technologies",
+      imageUrl: Assets.HashTrust,
       socials: {
-        mail: "https://mail.com/company2",
-        github: "https://github.com/company2",
-        linkedin: "https://linkedin.com/company2",
-        instagram: "https://instagram.com/company2",
+        mail: "support@hashtrust.in",
+        github: "https://www.hashtrust.in/",
+        linkedin: "https://www.linkedin.com/company/hash-trust-technologies-pvt-ltd/",
+        instagram: "https://www.instagram.com/hashtrust/ ",
       },
     },
   ];
@@ -48,6 +50,7 @@ export const SponsorsData = [
       title: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       companyName: PropTypes.string.isRequired,
+      imageUrl: PropTypes.string.isRequired,
       socials: PropTypes.shape({
         mail: PropTypes.string.isRequired,
         github: PropTypes.string.isRequired,

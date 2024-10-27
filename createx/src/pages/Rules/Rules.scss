@@ -1,0 +1,86 @@
+.rules-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    height: 80vh;
+
+}
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+    gap: 3rem;
+
+    @media screen and (max-width: 768px) {
+        padding: 2rem;
+    }
+}
+.rules-title {
+    font-family: 'Kagitingan';
+    color: #F2F2F2;
+    font-size: 4.26rem;
+
+
+    
+    @media screen and (max-width: 768px) {
+        font-size: 2.13rem;
+    }
+}
+
+.rules-content {
+    font-family: "Jura";
+    color: #F2F2F2;
+    font-size: 2.4rem;
+    max-width: 60rem;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+        max-width: 28rem;
+        text-wrap: wrap;
+    }
+}
+
+.rules-download  {
+    width: fit-content;
+    border-radius: 0.86667rem;
+background: var(--Primary, #FF6E1F);
+color: #F2F2F2;
+display: inline-flex;
+padding: 1.2rem 3.33333rem;
+justify-content: center;
+align-items: center;
+gap: 0.66667rem;
+font-family: Kagitingan;
+font-size: 2rem;
+
+@media screen and (max-width: 768px) {
+    font-size: 1rem;
+    padding: 0.6rem 1.66667rem;
+    border-radius: 0.43333rem;
+}
+
+}
+
+.rules__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+  
+        @media screen and (max-width: 768px) {
+          object-position: center;
+          object-fit: fill;
+        }
+      }
+
+      .rules-content--highlight {
+        font-weight: 700 ;
+      }

@@ -8,7 +8,7 @@ export default {
       colors: {
       primary: '#FF6E1F',
       cream: '#F5E6C4',
-      white: '#F5E6C4',
+      white: '#FFFFFF',
       black: '#000000',
     },
       fontFamily: {
