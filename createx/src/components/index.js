@@ -9,3 +9,4 @@ export { default as ScrollSection8 } from './ScrollSection8';
 export { default as CountdownTimer } from './CountdownTimer';
 export { default as Navbar } from './Navbar';
 export { default as CreateXVideo } from './CreateXVideo';
+export { default as Button } from './Button';

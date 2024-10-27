@@ -2,6 +2,8 @@ import React from 'react';
 import HashtagCreateToInnovate from '../HashtagCreateToInnovate'; // Adjust path as needed
 import './ScrollSection5.scss';
 import { Assets } from '../../assets';
+import { Button } from 'react-bootstrap';
+
 const ScrollSection5 = () => {
   return (
     <div className='about_prize scroll-section'>
@@ -22,6 +24,7 @@ const ScrollSection5 = () => {
           <p className='about_prize__content__description--bypass'>
           * The prize pool will be distributed amongst winners in certain categories (view the rulebook for more details).
             </p>
+            <div className='about__content__description--hashtag-container'><Button href='https://unstop.com/p/createx-2024-innovatecreateignite-mlv-textile-engineering-college-bhilwara-1201264' target='_blank' className='rules-download reg-button'>Register Now</Button></div>
         </div>
       </div>
     </div>

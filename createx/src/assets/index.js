@@ -6,6 +6,9 @@ import CreateX_BG4 from './CreateX_BG4.png';
 import CreateXWhite from './CreateXWhite.png';
 import TechBizzClubDark from './TechBizzClubDark.png';
 import MLVTEC from './MLVTEC.png';
+import Rulebook from './CreateX2024_Rulebook.pdf';
+import HashTrust from './HashTrust.png';
+import InnovatechS from './InnovatechS.png';
 
 export const Assets = {
     CreateXMp4: CreateXMp4,
@@ -16,5 +19,8 @@ export const Assets = {
     CreateX_BG4: CreateX_BG4,
     TechBizzClubDark: TechBizzClubDark,
     MLVTEC: MLVTEC,
+    Rulebook: Rulebook,
+    HashTrust: HashTrust,
+    InnovatechS: InnovatechS,
 
 }
