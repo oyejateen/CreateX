@@ -4,6 +4,8 @@ import './ScrollSection8.scss';
 import Footer from '../Footer';
 import { IconContext } from "react-icons";
 import { BsLink45Deg } from "react-icons/bs";
+import { Button } from 'react-bootstrap';
+
 import { Assets } from '../../assets';
 const ScrollSection8 = () => {
   return (
@@ -21,7 +23,7 @@ const ScrollSection8 = () => {
           </p>
 
           <div className='about_contact__content__description--hashtag-container'>
-            
+          <Button href='/contact' className='rules-download reg-button'>Contact Us</Button>
           </div>
         </div>
       </div>
