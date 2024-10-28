@@ -11,13 +11,13 @@ const FAQs = () => {
   return (
     <div className="py-40 overflow-hidden w-screen flex justify-center bg-black">
       <div className="w-[1100px]">
-        <h1 className="text-white font-kagitingan md:text-7xl text-4xl font-bold text-left md:m-16 m-14">
+        <h1 className="text-white font-kagitingan text-[6.4rem] font-bold leading-tight text-left md:m-16 m-14">
           FAQS
         </h1>
         {faqs.map((item, i) => (
           <div
             key={i}
-            className={`text-white border-black font-medium last:border-b-0 rounded-[40px] md:m-16 m-14 ${
+            className={`text-white border-black font-medium last:border-b-0 rounded-[40px] md:m-16 m-14 overflow-hidden ${
               activeId === i ? "bg-white" : ""
             }`}
           >
@@ -35,8 +35,8 @@ const FAQs = () => {
               </span>
             </div>
             <div
-              className={`transition-all ease-in-out duration-500 overflow-hidden ${
-                activeId === i ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+              className={`transition-all ease-in-out duration-500 ${
+                activeId === i ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
               }`}
               style={{
                 transitionProperty: "max-height, opacity",
