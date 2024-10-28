@@ -18,7 +18,7 @@ const ScrollSection3 = ({ background, headingOrange, description }) => {
           <p className='about_rules__content__description'>
            {description}
           </p>
-          <div className='about__content__description--hashtag-container'><Button href={Assets.Rulebook}  className='rules-download reg-button'>View Rulebook</Button></div>
+          <div className='about__content__description--hashtag-container'><Button href='/rules'  className='rules-download reg-button'>View Rulebook</Button></div>
         </div>
       </div>
     </div>
