@@ -16,11 +16,11 @@ const ScrollSection2 = ({ background, logo, headingWhite, headingOrange, descrip
           <p className='about__content__description'>
             {description}
           </p>
-          <img className='about__logo' src={logo} alt="" />
-          </div>
           <div className='about__content__description--hashtag-container'>
           <Button href='https://unstop.com/p/createx-2024-innovatecreateignite-mlv-textile-engineering-college-bhilwara-1201264' target='_blank' className='rules-download reg-button'>Register Now</Button>
           </div>
+          <img className='about__logo' src={logo} alt="" />
+          </div>       
         </div>
         
       </div>
