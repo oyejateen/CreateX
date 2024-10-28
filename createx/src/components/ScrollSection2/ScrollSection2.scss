@@ -141,7 +141,7 @@
     &__description--hashtag-container {
       margin-top: 1.5rem;
       display: flex;
-      gap: 1.5rem;
+      gap: 1rem;
       flex-direction: column;
       @media screen and (max-width: 768px) {
         width: 70%;
@@ -166,8 +166,8 @@
   gap: 2rem;
 
   &-container{
-   display: flex;
-   gap: 2rem;
+   display: inline-flex;
+   gap: 1rem;
    justify-content: space-between; 
    @media screen and (max-width: 768px) {
     font-size: 1rem;
@@ -200,3 +200,11 @@
   }
 }
 
+
+.underline{
+  text-decoration: underline;
+  color: #ffffff;
+}
+.ebo-container a{
+  display: inline-flex;
+}
