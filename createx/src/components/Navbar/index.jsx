@@ -58,7 +58,8 @@ const Navbar = () => {
             </button>
           </div>
           {/* Disabled links for Problem Statements and Rules */}
-          <span className="text-gray-500 font-kagitingan text-2xl text-left cursor-not-allowed">PROBLEM STATEMENTS</span>
+          {/* <span className="text-gray-500 font-kagitingan text-2xl text-left cursor-not-allowed">PROBLEM STATEMENTS</span> */}
+          <Link to="/problem-statements" className="text-white font-kagitingan text-2xl text-left" onClick={closeMenu}>PROBLEM STATEMENTS</Link>
           <Link to="/rules" className="text-white font-kagitingan text-2xl text-left" onClick={closeMenu}>RULES</Link>
           <Link to="/sponsors" className="text-white font-kagitingan text-2xl text-left" onClick={closeMenu}>SPONSORS</Link>
           <Link to="/faq" className="text-white font-kagitingan text-2xl text-left" onClick={closeMenu}>FAQ</Link>
