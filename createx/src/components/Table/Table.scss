@@ -1,0 +1,129 @@
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+  
+    @media (max-width: 768px) {
+
+        display: block;
+      .table-heading th,
+      .table tbody td {
+        // display: none; // Hide non-essential columns on mobile
+      }
+  
+      .table-heading .table-column-0, // Show ID
+      .table-heading .table-column-1, // Show Title
+      .table-heading .table-column-2, // Show Description
+      .table tbody .table-cell-0,
+      .table tbody .table-cell-1,
+      .table tbody .table-cell-2 {
+        display: table-cell; // Display only essential columns
+      }
+    }
+  }
+  
+  .table-heading th {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Kagitingan";
+    font-size: 2.4rem;
+    height: 6.46rem;
+    background-color: hsl(21, 100%, 56%);
+    color: #ffffff;
+  
+    &:first-child {
+      border-top-left-radius: 2rem;
+    }
+  
+    &:last-child {
+      border-top-right-radius: 2rem;
+    }
+  }
+  
+  .table-cell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .read-more {
+    color: #FF6E1F;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 5px;
+    display: inline-block;
+  }
+  
+  .description-expanded {
+    white-space: normal;
+  }
+  
+  tr {
+    text-wrap: wrap;
+    color: #e8e8e8;
+    font-family: 'Jura';
+    font-size: 1.6rem;
+  
+    &:last-child {
+      border: none;
+      border-bottom: 5px dashed #FF6E1F;
+    }
+  }
+  
+  .table {
+    width: 80%;
+  
+    & tbody {
+      border-left: 5px solid #FF6E1F;
+      border-right: 5px solid #FF6E1F;
+      border-bottom-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+  }
+  
+  td {
+    padding: 1rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .table-heading th {
+      font-size: 1.2rem;
+      height: 3.23rem;
+  
+      &:first-child {
+        border-top-left-radius: 1rem;
+      }
+  
+      &:last-child {
+        border-top-right-radius: 1rem;
+      }
+    }
+  
+    .read-more {
+      font-size: 0.8rem;
+      margin-left: 2.5px;
+    }
+  
+    tr {
+      font-size: 0.8rem;
+    }
+  
+    .table {
+      width: 100%;
+  
+      & tbody {
+        border-left: 2.5px solid #FF6E1F;
+        border-right: 2.5px solid #FF6E1F;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+    }
+  
+    td {
+      padding: 0.5rem;
+    }
+  }
+  

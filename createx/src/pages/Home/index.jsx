@@ -1,6 +1,6 @@
 import React from 'react';
 import { Assets } from '../../assets';
-import { HashtagCreateToInnovate, ScrollSection, ScrollSection2, ScrollSection3, ScrollSection5, ScrollSection6, ScrollSection7, ScrollSection8, CreateXVideo } from '../../components';
+import { HashtagCreateToInnovate, ScrollSection, ScrollSection2, ScrollSection3, ScrollSection5, ScrollSection6, ScrollSection7, ScrollSection8, CreateXVideo, EarlyBird } from '../../components';
 import Footer from '../../components/Footer';
 
 
@@ -20,7 +20,7 @@ const Home = () => {
         highlightText="CreateX"
         description="is an immersive competition that empowers students to tackle industry challenges with innovative solutions. Over 30 days, participants will explore their potential, collaborate, and compete, leading up to a grand exhibition and recognition of their work."
       />
-      
+      <EarlyBird className='scroll-section' />
       {/* Additional sections with different content */}
       <ScrollSection2
       className='scroll-section'

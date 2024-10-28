@@ -9,7 +9,6 @@ import './assets/scss/main.scss';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
         <Navbar /> 
 
           <Routes>
@@ -23,7 +22,6 @@ function App() {
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/faq" element={<FAQs/>}/>
           </Routes>
-      </div>
     </Router>
   );
 }
