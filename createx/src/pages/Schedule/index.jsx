@@ -16,9 +16,10 @@ const Schedule = () => {
 
   return (
     <div className="py-20 w-full flex flex-col items-center bg-black">
-      <h1 className="text-white font-kagitingan font-bold text-5xl md:text-7xl text-center lg:text-left mx-auto m-14 max-w-screen-xl">
+      <h1 className="text-white font-kagitingan font-bold text-5xl md:text-7xl text-left md:m-16 m-14 pl-4 w-full max-w-[950px]">
         SCHEDULE
       </h1>
+
       <div className="relative flex flex-col items-start w-full max-w-5xl px-4">
         {events.map((event, index) => (
           <ScheduleCard
