@@ -3,36 +3,22 @@ import ScheduleCard from './ScheduleCard';
 
 const Schedule = () => {
   const events = [
-    {
-      date: "2024-10-01",
-      title: "Event 1",
-      paragraphs: ["Description for Event 1.", "More details about Event 1."]
-    },
-
-    {
-      date: "2024-10-01",
-      title: "Event 1",
-      paragraphs: ["Description for Event 1.", "More details about Event 1.d,nfdfvh fdkljg bhkg trhgbgjtr r;lhtrjmhpoit;nhuty ohbjttiog tgjffj rj;gr;lkh gvrklgrgknlrgrgrgrjlgrkjl;j;lrrinjwtrm;trkmrmntri;oern"]
-    },
-    {
-      date: "2024-10-01",
-      title: "Event 1",
-      paragraphs: ["Description for Event 1.", "More details about Event 1."]
-    },
-    {
-      date: "2024-10-15",
-      title: "Event 2",
-      paragraphs: ["Description for Event 2.", "More details about Event 2 with additional details to  ejhfkjsefewfhl iew test layout."],
-    },
-    {
-      date: "2024-10-10",
-      title: "Event 3",
-      paragraphs: ["Description for Event 3.", "Extended details about Event 3 for testing the layout witjkjhfjekehwewbfj wekfhefkjneh ,fmdkjfmnfkgjfengfjlg varying content length."]
-    },
+    { date: "26 Oct", title: "Orientation Day", paragraphs: ["Details about the event, theme, competition structure and how you can collaborate, create, and compete over the next 30 days"] },
+    { date: "28 Oct", title: "Registration Begins", paragraphs: ["Go through the Register Now button or visit our Unstop Posting to register for CreateX 2024"] },
+    { date: "1 Nov", title: "Early Bird Offer Ends", paragraphs: ["The Early Bird offer (20% off) for Registrations ends"] },
+    { date: "10 Nov", title: "Registration End", paragraphs: ["Registrations and Problem Statement Submission Deadline"] },
+    { date: "16 Nov", title: "Checkpoint 1", paragraphs: ["Checkpoint and Check-in with the Organizing team"] },
+    { date: "23 Nov", title: "Checkpoint 2", paragraphs: ["Checkpoint and Check-in with the Organizing team"] },
+    { date: "30 Nov", title: "Final Checkpoint", paragraphs: ["Checkpoint and Check-in with the Organizing team. Last Reminder for Report Submission"] },
+    { date: "1 Dec", title: "Report Submission Deadline", paragraphs: ["Last Date to Submit the Project Report"] },
+    { date: "8 Dec", title: "Exhibition", paragraphs: ["Final Objective of the Event, The Exhibition. Showcasing Projects in a public exhibition and the Judging and Final Prize giving ceremony."] },
   ];
 
   return (
-    <div className="py-40 w-screen flex justify-center bg-black">
+    <div className="py-20 w-full flex flex-col items-center bg-black">
+      <h1 className="text-white font-kagitingan font-bold text-5xl md:text-7xl text-center lg:text-left mx-auto m-14 max-w-screen-xl">
+        SCHEDULE
+      </h1>
       <div className="relative flex flex-col items-start w-full max-w-5xl px-4">
         {events.map((event, index) => (
           <ScheduleCard
@@ -40,7 +26,7 @@ const Schedule = () => {
             date={event.date}
             title={event.title}
             paragraphs={event.paragraphs}
-            isLast={index === events.length - 1} // Pass isLast prop for the last card
+            isLast={index === events.length - 1}
           />
         ))}
       </div>
