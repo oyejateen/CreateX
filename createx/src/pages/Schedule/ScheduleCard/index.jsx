@@ -6,7 +6,7 @@ const ScheduleCard = ({ date, title, paragraphs, isLast }) => {
 
   useEffect(() => {
     if (descriptionRef.current) {
-      setLineHeight(descriptionRef.current.offsetHeight + (isLast ? 0 : 270));
+      setLineHeight(descriptionRef.current.offsetHeight + (isLast ? 0 : 280));
     }
   }, [paragraphs, isLast]);
 
@@ -36,7 +36,7 @@ const ScheduleCard = ({ date, title, paragraphs, isLast }) => {
       <div className="relative flex flex-col items-center z-10 mx-1">
       <div 
   className={`w-[2px] bg-[#FF6E1F] absolute md:left-[-4px] left-[-14px] 
-              md:top-0 top-[-11rem] ${isLast ? 'h-[40px] md:h-[${lineHeight}px]' : `h-[${lineHeight}px]`}`}
+              md:top-0 top-[-11rem] ${isLast ? 'h-[40px] md:h-[${lineHeight}px - 270]' : `h-[${lineHeight}px]`}`}
   style={{ height: isLast ? '0' : `${lineHeight}px` }} 
 />
         <div 
