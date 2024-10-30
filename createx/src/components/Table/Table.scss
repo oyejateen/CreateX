@@ -66,10 +66,6 @@
     font-family: 'Jura';
     font-size: 1.6rem;
   
-    &:last-child {
-      border: none;
-      border-bottom: 5px dashed #FF6E1F;
-    }
   }
   
   .table {
@@ -80,6 +76,11 @@
       border-right: 5px solid #FF6E1F;
       border-bottom-left-radius: 2rem;
       border-bottom-right-radius: 2rem;
+
+      & tr:last-child {
+        border: none;
+        border-bottom: 5px dashed #FF6E1F;
+      }
     }
   }
   
