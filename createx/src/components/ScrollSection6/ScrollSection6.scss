@@ -1,0 +1,135 @@
+@mixin heading {
+    font-size: 4.26rem;
+    font-family: 'Kagitingan';
+    font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.13rem;
+      
+    }
+
+}
+  
+  @mixin white {
+    color: #ffffff;
+  }
+  
+  @mixin orange {
+    color: #FF6E1F;
+  }
+
+  .scroll-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  
+    .about_ps__background {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+
+      @media screen and (max-width: 768px) {
+        object-position: bottom;
+        object-fit: scale-down;
+        padding: 1rem 0;
+      }
+    }
+  
+  }
+  
+
+  .about_ps {
+    &__container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 3.53rem;
+    }
+  
+    &__logo {
+      position: relative;
+      z-index: 1;
+
+    }
+  
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+      gap: 1.6rem;
+      @media screen and (max-width: 768px) {
+        gap: 1rem;
+        
+      }
+  
+      &__heading {
+        display: inline-flex;
+        gap: 1rem;
+        z-index: 1;
+        flex-direction: column;
+        line-height: 0.8;
+        @media  screen and (max-width: 768px) {
+            max-width: 17.6rem;
+          
+        }
+  
+        &--white {
+          @include white;
+          @include heading;
+          font-size: 3.2rem;
+
+          @media screen and (max-width: 768px) {
+            font-size: 1.6rem;
+          }
+        }
+  
+        &--orange {
+          @include orange;
+          @include heading;
+        }
+      }
+  
+      &__description {
+        display: ruby;
+        max-width: 60rem;
+        font-family: 'Jura', sans-serif;
+        font-size: 2.4rem;
+        font-weight: 400;
+        @include white;
+        text-wrap: wrap;
+
+        @media screen and (max-width: 768px) {
+          font-size: 1.06rem;
+          max-width: 17.6rem;
+        }
+
+        &--bypass {
+            font-size: 1.6rem;
+            color: #D7CABE;
+            font-family: 'Jura';
+            max-width: 54.93rem;
+
+        }
+  
+        &--highlight {
+          font-weight: 700;
+          @include white;
+        }
+      }
+  
+      &__description--hashtag-container {
+        margin-top: 1.5rem;
+      }
+    }
+  }

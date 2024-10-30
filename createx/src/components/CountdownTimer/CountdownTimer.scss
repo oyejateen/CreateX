@@ -1,0 +1,77 @@
+.countdown-timer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .timer {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+  }
+  
+  .time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 12.3rem;
+    height: 12.3rem;
+    border-radius: 0.66667rem;
+    background: #252525;
+    font-size: 4.26rem;
+    font-family: "Kagitingan";
+    color: #E8E8E8;
+    text-align: center;
+    animation: fade-in 1s ease forwards;
+    font-weight: bold;
+    @media  screen and (max-width: 768px) {
+      font-size: 18px;
+      width: 5.26rem;
+      height: 5.23rem;
+      font-size: 1.8rem;
+
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.timer-heading {
+  color: #E8E8E8;
+  font-size: 2.6rem;
+  line-height: normal;
+  @media screen and (max-width: 768px) {
+    font-size: 1.06rem;
+    
+  }
+}
+
+.colon {
+color:#E8E8E8;
+font-size: 5.8rem;
+
+@media screen and (max-width: 768px) {
+  font-size: 3.4rem;
+  
+}
+}
+
+.time-number {
+    line-height: normal;
+}
+
+.time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.4rem;
+}

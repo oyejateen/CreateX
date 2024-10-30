@@ -1,0 +1,72 @@
+.hashtag-create-to-innovate {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    line-height: normal;
+    font-family: "Koulen";
+  
+    &__hashtag {
+      font-size: 3.86rem;
+      color: #ffffff;
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+        
+      }
+    }
+  
+    &__C {
+      font-size: 5.6rem;
+      color: #FF6E1F; /* Orange */
+      @media screen and (max-width: 768px) {
+        font-size: 2.8rem;
+        
+      }
+    }
+  
+    &__reate {
+      font-size: 3.86667rem;
+      color: #FF6E1F;
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+        
+      }
+
+    }
+  
+    &__T {
+      font-size: 5.6rem;
+      color: #ffffff;
+      @media screen and (max-width: 768px) {
+        font-size: 2.8rem;
+        
+      }
+    }
+  
+    &__o {
+      font-size: 3.86rem;
+      color: #ffffff;
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+        
+      }
+    }
+  
+    &__I {
+      font-size: 5.6rem;
+      color: #FF6E1F;
+      @media screen and (max-width: 768px) {
+        font-size: 2.8rem;
+        
+      }
+    }
+  
+    &__nnovate {
+      font-size: 3.86rem;
+      color: #FF6E1F;
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+        
+      }
+    }
+  }
+  

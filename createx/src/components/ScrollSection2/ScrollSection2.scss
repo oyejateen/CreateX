@@ -1,0 +1,210 @@
+@mixin heading {
+  font-size: 4.26rem;
+  font-family: 'Kagitingan';
+  font-weight: 700;
+
+  @media screen and (max-width: 768px) {
+      font-size: 2.13rem;
+    
+  }
+
+}
+
+@mixin white {
+  color: #ffffff;
+}
+
+@mixin orange {
+  color: #FF6E1F;
+}
+
+.scroll-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .about__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    @media screen and (max-width: 768px) {
+      object-position: center;
+      object-fit: fill;
+    }
+  }
+
+}
+
+  .about {
+  &__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 3.53rem;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    @media screen and (max-width: 768px) {
+      width: 67%;
+      height: 100%;
+    }
+
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 768px) {
+      align-items: center;
+      
+    }
+
+    &__heading {
+      display: inline-flex;
+      gap: 1rem;
+      flex-direction: column;
+      z-index: 1;
+      @media screen and (max-width: 768px) {
+        align-items: center;
+      }
+
+      &--white {
+        @include white;
+        @include heading;
+      }
+
+      &--orange {
+        @include orange;
+        @include heading;
+        font-size: 4.8rem;
+        @media screen and (max-width: 768px) {
+          font-size: 2.8rem;
+          max-width: 17.6rem;
+        
+      }
+      }
+    }
+
+    &__description {
+      display: ruby;
+      max-width: 43.86rem;
+      font-family: 'Jura', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 400;
+      @include white;
+      text-wrap: wrap;
+      @media screen and (max-width: 768px) {
+        font-size: 1.06rem;
+        max-width: 17.6rem;
+        
+      }
+
+      &--container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        gap: 3.87rem;
+        
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          align-items: center;
+          gap: 1.5rem;
+          
+        }
+      }
+
+      &--highlight {
+        font-weight: 700;
+        @include white;
+      }
+    }
+
+    &__description--hashtag-container {
+      margin-top: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-direction: column;
+      @media screen and (max-width: 768px) {
+        width: 70%;
+        margin-top: 1rem;
+        justify-content: center;
+        
+        display: flex;
+      }
+    }
+  }
+}
+
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #ffffff;
+
+}
+
+.ebo {
+  display: inline-flex;
+  gap: 2rem;
+
+  &-container{
+   display: inline-flex;
+   gap: 1rem;
+   justify-content: space-between; 
+   @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    flex-direction: column;
+  
+    
+  }
+  }
+}
+
+.off-1 {
+  font-size: 2rem;
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+  
+    
+  }
+}
+
+.off-2{
+  font-size: 2rem;
+  display: inline-flex;
+  gap: 1rem;
+  font-weight: 700;
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+    text-wrap: nowrap;
+    
+  }
+}
+
+
+.underline{
+  text-decoration: underline;
+  color: #ffffff;
+}
+.ebo-container a{
+  display: inline-flex;
+}

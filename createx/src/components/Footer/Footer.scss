@@ -1,0 +1,69 @@
+.footer {
+    height: 13.33rem;
+    background: #FF6E1F;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    line-height: normal;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        height: 6.67rem;
+        padding: 0 0.5rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+&__container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    
+    &--bar{
+        width: 100vw;
+        height: 0.6rem;
+        background: white;
+
+    }
+
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        line-height: normal;
+
+    &__description{
+        color: white;
+        font-size: 3.2rem;
+        font-weight: 700;
+        font-family: "Jura";
+        line-height: normal;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1.19rem;
+            text-align: center;
+            
+        }
+
+        &--highlight{
+            color: white;
+            font-weight: 400;
+            font-family: 'Jura';
+            font-size: 2.13rem;
+            line-height: normal;
+
+            @media screen and (max-width: 768px) {
+                font-size: 0.8rem;
+                text-align: center;
+        }
+
+    }
+}
+}
+}
+}

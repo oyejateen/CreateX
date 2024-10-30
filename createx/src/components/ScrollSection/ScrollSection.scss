@@ -1,0 +1,123 @@
+@mixin heading {
+    font-size: 4.26rem;
+    font-family: 'Kagitingan';
+    font-weight: 700;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.13rem;
+      
+    }
+
+}
+
+@mixin white {
+    color: #ffffff;
+}
+
+@mixin orange {
+    color: #FF6E1F;
+}
+
+.scroll-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  
+    .about_createx__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+
+      @media screen and (max-width: 768px) {
+        object-position: center;
+        object-fit: fill;
+      }
+    }
+
+}
+  
+    .about_createx {
+    &__container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 3.53rem;
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+  
+    &__logo {
+      position: relative;
+      z-index: 1;
+
+      @media screen and (max-width: 768px) {
+        width: 70%;
+        
+      }
+    }
+  
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+  
+      &__heading {
+        display: inline-flex;
+        gap: 1rem;
+        z-index: 1;
+  
+        &--white {
+          @include white;
+          @include heading;
+        }
+  
+        &--orange {
+          @include orange;
+          @include heading;
+        }
+      }
+  
+      &__description {
+
+       
+        display: ruby;
+        max-width: 43.86rem;
+        font-family: 'Jura', sans-serif;
+        font-size: 2.4rem;
+        font-weight: 400;
+        @include white;
+        text-wrap: wrap;
+
+        @media screen and (max-width: 768px) {
+          font-size: 1.06rem;
+          max-width: 17.6rem;
+          
+        }
+  
+        &--highlight {
+          font-weight: 700;
+          @include white;
+        }
+      }
+  
+      &__description--hashtag-container {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+  

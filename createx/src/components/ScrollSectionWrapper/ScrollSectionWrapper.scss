@@ -1,0 +1,56 @@
+.scroll-container {
+    height: 100vh; /* Full screen height for the container */
+    scroll-snap-type: y mandatory; /* Vertical snap scroll */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    position: relative;
+  
+    .background {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1; /* Ensure the background is behind content */
+    }
+  
+    .scroll-section {
+      scroll-snap-align: start;
+      height: 100vh; /* Each section takes up full screen */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      box-sizing: border-box;
+  
+      &__container {
+        z-index: 1;
+        max-width: 800px;
+      }
+  
+      &__heading {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+  
+        &--white {
+          color: #fff;
+        }
+  
+        &--orange {
+          color: #FF6E1F;
+        }
+      }
+  
+      &__description {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+  
+      
+  
+     
+    }
+  }
+  
